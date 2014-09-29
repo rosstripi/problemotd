@@ -8,7 +8,7 @@ def reverse(s):
 
 def find_palindrome(text):
     longest = ""
-    for leng in range(2,len(text)):
+    for leng in range(2,len(text)+1):
         for pos in range(len(text)-leng+1):
             piece = text[pos:pos+leng]
             half = leng/2
